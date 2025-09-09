@@ -1,11 +1,11 @@
-import { Routes, Route } from "react-router-dom"
-import LandingPage from "./pages/LandingPage";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingpage";
 import ConverterPage from "./pages/ConverterPage";
 import ChartPage from "./pages/ChartPage";
 import NewsPage from "./pages/NewsPage";
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar";
-
+import NewsDetails from "./pages/NewsDetails";
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/converter" element={<ConverterPage />} />
         <Route path="/chart" element={<ChartPage />} />
-        <Route path="/news" element={<NewsPage />} />
+        <Route path="/newspage" element={<NewsPage />} />
+        <Route path="/news/:id" element={<NewsDetails />} />
       </Routes>
-    <Footer />
+      <Footer />
     </div>
   );
 }
 
 export default App;
-

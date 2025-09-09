@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-zinc-100 text-black flex justify-between items-center px-8 py-8 ">
+    <nav className="bg-transparent relative z-20 text-black flex justify-between items-center px-8 py-8 ">
      
       <div className="flex items-center gap-2">
         <div className=" rounded-full  
@@ -14,14 +14,15 @@ const Navbar = () => {
           />
         </div>
         <h1 className="text-lg font-semibold text-purple-600">
-          Kinyoni Konverter</h1>
+      Kinyoni Konverter</h1>
       </div>
 
-      <ul className="flex gap-2 bg-gray-200 rounded-full pl-0.5 py-1">
+      <ul className="flex gap-2 
+       rounded-full pl-0.5 py-1 text-white shadow-[inset_2px_2px_2px_1px_rgba(0,0,0,0.3)]">
         <li>
           <Link
             to="/"
-            className="px-6 py-1.5 rounded-full bg-gray-400 font-semibold"
+            className="px-6 py-1.5 rounded-full hover:bg-gradient-to-tl from-[#00CAFF] to-[#0065F8] t "
           >
             Home
           </Link>
@@ -44,7 +45,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/news"
+            to="/newspage"
             className="px-6 py-1.5 rounded-full hover:bg-gray-300 font-semibold"
           >
             News
