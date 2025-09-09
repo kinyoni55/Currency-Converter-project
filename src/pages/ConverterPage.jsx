@@ -34,7 +34,7 @@ const ConverterPage = () => {
 
   return (
     <main className="p-6 bg-zinc-100 flex flex-col items-center min-h-screen">
-      <h1 className="text-2xl font-bold mb-6">Live Currency Converter</h1>
+      <h1 className="text-2xl font-bold mb-6">Konverter</h1>
       <div className="flex gap-6">
         {/* From Input */}
         <div className="bg-white p-4 rounded shadow">
@@ -55,6 +55,10 @@ const ConverterPage = () => {
             className="w-full border-b-2 border-gray-300 text-xl focus:outline-none bg-transparent"
             placeholder="Amount"
           />
+           <p className="mt-4 text-gray-600">
+          {amount} {fromCurrency} = {result ?? "..."} {toCurrency} <br />
+          
+        </p>
         </div>
 
         {/* To Input */}
@@ -75,12 +79,10 @@ const ConverterPage = () => {
             className="w-full border-b-2 border-gray-300 text-xl focus:outline-none bg-transparent"
             placeholder="Converted"
           />
+           
         </div>
       </div>
-      <p className="mt-4 text-gray-600">
-        {amount} {fromCurrency} = {result ?? "..."} {toCurrency} <br />
-        
-      </p>
+     
     </main>
   );
 };

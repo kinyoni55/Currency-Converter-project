@@ -18,11 +18,11 @@ const Navbar = () => {
       </div>
 
       <ul className="flex gap-2 
-       rounded-full pl-0.5 py-1 text-white shadow-[inset_2px_2px_2px_1px_rgba(0,0,0,0.3)]">
+       rounded-full pl-0.5 py-1 bg-slate-200 text-black shadow-[inset_2px_2px_2px_1px_rgba(0,0,0,0.3)]">
         <li>
           <Link
             to="/"
-            className="px-6 py-1.5 rounded-full hover:bg-gradient-to-tl from-[#00CAFF] to-[#0065F8] t "
+            className="px-6 py-1.5 rounded-full "
           >
             Home
           </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/converter"
-            className="px-6 py-1.5 rounded-full hover:bg-gray-300 font-semibold"
+            className="px-6 py-1.5 rounded-full font-semibold"
           >
             Converter
           </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/chart"
-            className="px-6 py-1.5 rounded-full hover:bg-gray-300 font-semibold"
+            className="px-6 py-1.5 rounded-full font-semibold"
           >
             Chart
           </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/newspage"
-            className="px-6 py-1.5 rounded-full hover:bg-gray-300 font-semibold"
+            className="px-6 py-1.5 rounded-full font-semibold"
           >
             News
           </Link>
